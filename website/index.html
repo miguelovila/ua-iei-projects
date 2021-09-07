@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <!-- Meta Tags Necessárias -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- JS Personalizado -->
+    <script src="./js/navbar.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+    <title>Realidade Aumentada</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-offset="200" data-bs-target=".navbar">
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container nav-cont">
+        <a class="navbar-brand" href="#topo" onclick="esconder(false)">Realidade Aumentada</a>
+        <button id="toggler" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#conceito" onclick="esconder()">Conceito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#historia" onclick="esconder()">História</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aplicacoes" onclick="esconder()">Aplicações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#futuro" onclick="esconder()">Futuro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre" onclick="esconder()">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header id="topo">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <p class="paragraph-light">Um olhar detalhado sobre a</p>
+            <h1 class="title1-light display-3">Realidade Aumentada</h1>
+            <a class="btn-scrolldown" href="#conceito"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Conceito-->
+    <section id="conceito" class="section-space">
+      <div class="title-section container">
+        <h2 class="title1-dark">Conceito</h2>
+        <h3 class="subtitle-dark">entende o que é a realidade aumentada</h3>
+      </div>
+      <div class="container">
+        <p class="paragraph-dark">A realidade aumentada consiste na interligação de elementos virtuais na visualisação do mundo real. Por outras palavras, baseia-se numa experiência interativa entre o real e o virtual, onde objetos que pertencem ao plano virtual podem ser manipulados num plano real aumentado.</p>
+        <p class="paragraph-dark">A realidade aumentada é a tecnologia que está mais próxima do real já que a realidade virtual cria um ambiente totalmente virtual e dissociado do mundo palpável.</p>
+      </div>
+      <div class="custom-divider-bottom white-to-dark">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+            ></path>
+        </svg>
+      </div>
+    </section>
+    <!--História-->
+    <section id="historia" class="bg-dark text-light">
+      <div class="title-section container">
+        <h2 class="title1-light">História</h2>
+        <h3 class="subtitle-light">conhece os marcos históricos mais importantes</h3>
+      </div>
+      <div class="container">
+        <div class="history-card row">
+          <div class="col-md-5 year-container order-md-2">
+            <h2 class="title2-light year-text">1962</h2>
+          </div>
+          <div class="col-md-7 order-md-1">
+            <h4 class="title2-light">Criação do Sensorama</h4>
+            <p class="paragraph-light">É feita a primeira referência histórica a algo que se assemelha à realidade aumentada: uma máquina criada por <i>Morton Heilig</i> chamada Sensorama. Esta máquina imersiva era capaz de exibir imagens tridimensionais, reproduzir som estéreo, transmitir sensações táteis como vibrações e, ainda, transmitir sensações olfativas.</p>
+          </div>
+        </div>
+        <div class="history-card-right row">
+          <div class="col-md-5 year-container order-md-1">
+            <h2 class="title2-light year-text">1968</h2>
+          </div>
+          <div class="col-md-7 order-md-2">
+            <h4 class="title2-light">Primeiro <i>Head-Mounted Display</i></h4>
+            <p class="paragraph-light"><i>Ivan Sutherland</i> desenvolveu o primeiro <i>head-mounted display</i>. Este dispositivo que se coloca na cabeça, quando conectado a um computador, já era capaz de gerar gráficos rudimentares de salas e objetos e mostrá-los ao utilizador.</p>
+          </div>
+        </div>
+        <div class="history-card row">
+          <div class="col-md-5 year-container order-md-2">
+            <h2 class="title2-light year-text">1992</h2>
+          </div>
+          <div class="col-md-7 order-md-1">
+            <h4 class="title2-light">Criação do conceito</h4>
+            <p class="paragraph-light"><i>Tom Caudell</i>, um cientista e pesquisador da <i>Boeing</i> usou pela primeira vez o termo "realidade aumentada" quando idealizou uma espécie de óculos que auxiliasse os operários da empresa na leitura dos extensos manuais de manutenção das aeronaves.</p>
+          </div>
+        </div>
+        <div class="history-card-right row">
+          <div class="col-md-5 year-container">
+            <h2 class="title2-light year-text">2016</h2>
+          </div>
+          <div class="col-md-7">
+            <h4 class="title2-light"><i>Pokemon GO</i> e filtros do <i>Snapchat</i></h4>
+            <p class="paragraph-light">Estas aplicações que todos conhecemos vieram demonstrar que a realidade aumentada já está presente no quotidiano. Apesar de simples, chamaram à atenção de milhares de utilizadores e abriram portas para que outras aplicações semelhantes surgissem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-divider-bottom dark-to-white">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+            ></path>
+        </svg>
+      </div>
+    </section>
+    <!--Aplicações-->
+    <section id="aplicacoes">
+      <div class="title-section container">
+        <h2 class="title1-dark">Aplicações</h2>
+        <h3 class="subtitle-dark">descobre as áreas onde já faz a diferença</h3>
+      </div>
+      <div class="row g-0 py-0">
+        <div class="col-lg-4 col-sm-6">
+          <div class="aplicacao">
+            <img src="./img/gaming.jpg" alt="realidade aumentada utilizada na indústria dos videojogos">
+            <div class="aplicacao-overlay">
+              <div>
+                <h4 class="title2-light">Videojogos</h4>
+                <p class="paragraph-light">Os jogos são mais complexos e, mesmo com a componente virtual, promovem uma maior ligação à realidade.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="aplicacao">
+            <img src="./img/education.jpg" alt="realidade aumentada utilizada na educação">
+            <div class="aplicacao-overlay">
+              <div>
+                <h4 class="title2-light">Educação</h4>
+                <p class="paragraph-light">Atualmente é possível projetar e visualizar em detalhe modelos 3D interativos de manuais escolares.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="aplicacao">
+            <img src="./img/health.jpg" alt="realidade aumentada utilizada no ramo da súde">
+            <div class="aplicacao-overlay">
+              <div>
+                <h4 class="title2-light">Medicina</h4>
+                <p class="paragraph-light">Existe uma cirurgia em que o coração do paciente é projetado em tempo real, reduzindo os riscos para o paciente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="aplicacao">
+            <img src="./img/engeneering.jpg" alt="realidade aumentada utilizada na engenharia">
+            <div class="aplicacao-overlay">
+              <div>
+                <h4 class="title2-light">Engenharia</h4>
+                <p class="paragraph-light">Na criação de novos produtos, visualizá-los com rigor antes de enviar para uma linha de produção é crucial.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="aplicacao">
+            <img src="./img/architecture.jpeg" alt="realidade aumentada utilizada na arquitetura">
+            <div class="aplicacao-overlay">
+              <div>
+                <h4 class="title2-light">Arquitetura</h4>
+                <p class="paragraph-light">Atualmente é possível simular imóveis na sua futura zona de construção antecipando problemas que surjam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="aplicacao">
+            <img src="./img/logistics.jpg" alt="realidade aumentada utilizada na logística">
+            <div class="aplicacao-overlay">
+              <div>
+                <h4 class="title2-light">Logística</h4>
+                <p class="paragraph-light">Com o aumento do volume de compras, a realidade aumentada melhorou a produtividade dos operários.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FUTURO-->
+    <section class="section-space" id="futuro">
+      <div class="title-section container">
+        <h2 class="title1-dark">Futuro</h2>
+        <h3 class="subtitle-dark">imagina novas possibilidades</h3>
+      </div>
+      <div class="container">
+        <blockquote class="quote-holder row">
+          <div class="col-md-7 align-self-center">
+            <p class="paragraph-dark">A display connected to a digital computer gives us a chance to gain familiarity with concepts not realizable in the physical world. It is a looking glass into a mathematical wonderland.</p>
+            <cite class="paragraph-dark">Ivan Sutherland</cite>
+          </div>
+          <img class="col-md-5" src="./img/ivan-sutherland.jpeg" alt="imagem de Ivan Sutherland">
+        </blockquote>
+        <div class="section-space">
+          <p class="paragraph-dark">Ao contrário do que se imagina, a realidade aumentada não se limitará apenas a contexto empresarial como até agora tem acontecido, na maioria das vezes. Todas as evoluções desta tecnologia irão ditar o estilo de vida do ser humano daqui a umas décadas, já que terá um impacto signifcativo no quotidiano.</p>
+          <p class="paragraph-dark">O futuro apresenta-se muito promissor. Com a aposta de grandes empresas como a Google e a Microsoft, a maioria das atividades comerciais irão fazer uso desta tecnologia para aumentar a produtividade. E à medida que a pesquisa avança, o preço desta tecnologia irá reduzir, fazendo com que num futuro próximo seja comum tal como os <i>smartphones</i> são nos dias de hoje.</p>
+        </div>
+      </div>
+    </section>
+    <!--Sobre-->
+    <section id="sobre" class="section-space">
+      <div class="title-section container">
+        <h2 class="title1-dark">Sobre</h2>
+        <h3 class="subtitle-dark">mais informações acerca deste projeto</h3>
+      </div>
+      <div class="container">
+        <div class="accordion" id="accordionsection">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Autores do Projeto</button></h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionsection">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-circular" src="./img/diogo-lindo.jpg" alt="diogo lindo a ser lindo">
+                    <h4 class="title2-dark">Diogo Silva</h4>
+                    <p class="paragraph-dark secondary-text text-center">MEC:108212<br><a class="hyper-link" href="mailto:dsgps@ua.pt">dsgps@ua.pt</a></p>
+                  </div>
+                  <div class="col-md-6 ">
+                    <img class="img-circular" src="./img/vila-lindo.jpeg" alt="Vila lindo a ser lindo">
+                    <h4 class="title2-dark">Miguel Vila</h4>
+                    <p class="paragraph-dark secondary-text text-center">MEC: 107276<br><a class="hyper-link" href="mailto:miguelovila@ua.pt">miguelovila@ua.pt</a></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="paragraph-dark">Durante este projeto houve bastante empenho pelos autores na criação deste <i>website</i> infromativo, dinâmico, responsivo e acessível a pessoas que usam <i>screen readers</i>. Para isto dedicou-se inúmeras horas de pesquisa e discussão de ideias para conseguir alcançar o resultado pretendido. Dessa forma considera-se que o envolvimento dos elementos do grupo tenha sido igual, ou seja, 50% para cada um.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Âmbito e Objetivo</button></h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionsection">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-circular" src="./img/ua-logo.jpg" alt="logótipo da unicersidade de aveiro">
+                    <h4 class="title2-dark">Universidade de Aveiro</h4>
+                    <p class="paragraph-dark secondary-text text-center">Instituição</p>
+                  </div>
+                  <div class="col-md-6 ">
+                    <img class="img-circular" src="./img/logo-deti.jpg" alt="logótipo do departamento de eletrónica telecomunicações e informática da unicersidade de aveiro">
+                    <h4 class="title2-dark">DETI</h4>
+                    <p class="paragraph-dark secondary-text text-center">Departamento</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="paragraph-dark">Este <i>website</i>, realizado em fevereiro de 2022 no âmbito da unidade curricular de Introdução à Engenharia Informática do curso de Engenharia de Computadores e Informática teve por base um relatório desenvolvido na mesma disciplina disponível <a class="hyper-link" download="realtorio-realidade-virtual" href="./documento.pdf">aqui</a>.</p>
+                  <p class="paragraph-dark">No desenvolvimento do projeto foi utilizada a plataforma de gestão de projetos CodeUA. O endereço do projeto nesta plataforma está disponível <a href="http://code.ua.pt/projects/infor2021-ap-g16" target="_blank" class="hyper-link">aqui</a>.</p>
+                  <p class="paragraph-dark">Com este <i>website</i> pretendeu-se dar a conhecer o que é a realidade aumentada, áreas onde esta já está a ser utilizada e aquilo que se pode esperar para o futuro desta tecnologia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Recursos Externos</button></h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionsection">
+              <div class="accordion-body">
+                <h5 class="title2-dark">Imagens</h5>
+                <p class="paragraph-dark secondary-text">As imagens utilizadas neste projeto estão de acordo com as políticas de diretos de autor e de <i>fair use</i> por se tratar de um projeto escolar para fins únicamente educacionais.</p>
+                <ul class="ul-imagens">
+                  <li>
+                    <p class="paragraph-dark">Foto de <a href="https://unsplash.com/photos/87oz2SoV9Ug" target="_blank" class="hyper-link">Patrick Schneider</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark">Foto de <a href="https://www.youtube.com/watch?v=Z-FRb8CZ__I" target="_blank" class="hyper-link">Freddie Wong</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark">Foto de <a href="https://www.visiblebody.com/blog/a-beginners-guide-to-augmented-reality-in-the-classroom" target="_blank" class="hyper-link">The Human Anatomy Atlas App</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark">Foto de <a href="https://engineering.wustl.edu/news/2020/WashU-developed-holograms-help-physicians-during-cardiac-procedure.html" target="_blank" class="hyper-link">The McKelvey School of Engineering</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark">Foto de <a href="https://www.audi-mediacenter.com/de/pressemitteilungen/audi-steigert-effizienz-in-der-logistikplanung-durch-augmented-reality-13441" target="_blank" class="hyper-link">AUDI AG</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark">Foto de <a href="https://www.constrobazaar.com/blog/futuristic-technologies-that-are-changing-the-construction-industry/virtual-reality/" target="_blank" class="hyper-link">ConstroBazaar</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark">Foto de <a href="https://www.pinterest.fr/pin/247416573265286610/" target="_blank" class="hyper-link">Multimac Srl</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark">Foto de <a href="https://www.coe.utah.edu/2018/02/26/ivan-sutherland-honored/" target="_blank" class="hyper-link">University of Utah</a></p>
+                  </li>
+                </ul>
+                <h5 class="title2-dark">Bibliotecas Externas</h5>
+                <ul>
+                  <li>
+                    <p class="paragraph-dark">Bootstrap v5.1.3</p>
+                  </li>
+                </ul>
+                <h5 class="title2-dark">Temas</h5>
+                <p class="paragraph-dark secondary-text">Todas as personalizações visuais (esquema de página, palete de cores, etc...) foram feitas de raíz pelos autores, inclusive a alteração do comportamento da barra de navegação.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">Bibliografia</button></h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionsection">
+              <div class="accordion-body">
+                <ol>
+                  <li>
+                    <p class="paragraph-dark">I. E. Sutherland, The Ultimate Display. 1965, pp. 506-508</p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark"><a href="https://ccg.pt/realidade-aumentada-aplicabilidade/" target="_blank" class="hyper-link">N. Sousa e Ccg, Realidade Aumentada: Foi um Longo Percurso até à sua aplicabilidade industrial!, abr. de 2018.</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark"><a href="https://www.vrs.org.uk/virtual-reality/history.html" target="_blank" class="hyper-link"><i>History of virtual reality</i>, jan. de 2020.</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark"><a href="https://translationalsciencebenefits.wustl.edu/using-3d-holograms-to-treat-cardiac-arrhythmia/" target="_blank" class="hyper-link">T. staff, <i>Using 3D holograms to treat cardiac arrhythmia</i>, abr. de 2021.</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark"><a href="https://elearningindustry.com/augmented-reality-in-education-staggering-insight-into-future" target="_blank" class="hyper-link">S. Sinha, <i>Augmented reality in education: A staggering insight into the future</i>, mai. de 2021.</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark"><a href="https://www.aviationbusinessnews.com/mro/technology-in-action-how-virtual-and-augmented-reality-are-boosting-mro-and-logistics/" target="_blank" class="hyper-link">M. Mo o dy, <i>Technology in action: How virtual and augmented reality are boosting MRO and Logistics</i>, dez. de 2020.</a></p>
+                  </li>
+                  <li>
+                    <p class="paragraph-dark"><a href="https://www.theverge.com/2019/2/24/18235460/microsoft-hololens-2-price-specs-mixed-reality-ar-vr-business-work-features-mwc-2019" target="_blank" class="hyper-link">D. Bohn, <i>Microsofts HoloLens 2: a $3,500 mixed reality headset</i>, fev de 2019.</a></p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark section-space">
+      <div class="container text-center">
+        <p class="normal footer-text paragraph-light secondary-text text-center footer-text">Projeto criado com &#128155; e &#9749; por Diogo Silva e Miguel Vila<br>Copyright &copy; Realidade Aumentada</p>
+        <p class="easteregg footer-text paragraph-light secondary-text text-center footer-text">Projeto criado com &#128155; e &#127866; por Diogo Silva e Miguel Vila<br>Copyright &copy; Realidade Aumentada</p>
+      </div>
+    </footer>
+    <!-- JavaScript do Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
