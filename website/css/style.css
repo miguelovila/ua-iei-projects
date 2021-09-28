@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+/* Estilos Gerais */
+
+html {
+  scroll-padding-top: 100px;
+}
+
+body {
+  line-height: 1.8;
+  font-size: 140%;
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+  color: #212529;
+}
+
+.section-space {
+  margin-top: 50px;
+}
+
+a {
+  font-weight: 700;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.title1-dark {
+  text-transform: uppercase;
+  color: #212529;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title1-light {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title2-dark {
+  text-transform: uppercase;
+  color: #212529;
+  font-weight: 600;
+}
+
+.title2-light {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.subtitle-dark {
+  color: #424242;
+  text-align: center;
+}
+
+.subtitle-light {
+  color: #ffffff;
+  text-align: center;
+}
+
+.paragraph-dark {
+  color: #212529;
+  text-align: justify;
+  font-size: 90%;
+}
+
+.paragraph-light {
+  color: #ffffff;
+  text-align: justify;
+  font-size: 90%;
+}
+
+.secondary-text {
+  font-size: 80%;
+  line-height: normal;
+}
+
+img {
+  width: 100%;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+/* Estilos da Navbar */
+
+.navbar {
+  box-shadow: 0 2px 30px 10px #2125298f;
+}
+
+.navbar .navbar-brand {
+  text-transform: uppercase;
+  color: #fed136;
+}
+
+.navbar .navbar-brand:hover {
+  color: #caa82a;
+}
+
+.navbar .navbar-brand:focus {
+  color: #fed136;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #fed136;
+}
+
+.navbar .navbar-nav .nav-link:focus {
+  color: #fed136;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #fed136;
+}
+
+.navbar .navbar-toggler {
+  color: transparent;
+  border: 1px solid #212529;
+  transition: border 0.2s ease-in-out;
+}
+
+.navbar .navbar-toggler:hover {
+  border: 1px solid #fed136;
+}
+
+
+/* Estilos do Header */
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fundo_html.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  margin-bottom: 3rem;
+}
+
+header .paragraph-light {
+  max-width: 550px;
+  margin: 18px auto;
+  text-align: center;
+}
+
+.btn-scrolldown {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border: 4px solid #ffffff;
+  height: 25px;
+  width: 25px;
+  border-left: transparent;
+  border-top: transparent;
+  animation: down 1s ease-in-out infinite alternate;
+}
+
+.btn-scrolldown:hover {
+  border-color: #fed136;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+  100% {
+    transform: translateY(-20px) rotate(45deg);
+  }
+}
+
+
+/* Estilos das Aplicações */
+
+.aplicacao {
+  overflow: hidden;
+  position: relative;
+  background-color: #212529;
+}
+
+.aplicacao h4 {
+  text-align: center;
+}
+
+.aplicacao p {
+  text-align: center;
+  font-size: 85%;
+  line-height: normal;
+}
+
+.aplicacao img,
+.aplicacao .aplicacao-overlay {
+  transform: scale(1.01);
+  transition: all 0.4s ease-in-out;
+}
+
+.aplicacao-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  opacity: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .aplicacao:hover .aplicacao-overlay {
+    opacity: 1;
+  }
+  .aplicacao:hover img {
+    transform: scale(1.11);
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .aplicacao .aplicacao-overlay {
+    opacity: 1;
+  }
+}
+
+
+/* História */
+
+.custom-divider-bottom {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 100px;
+  transform: translateY(1px);
+}
+
+.custom-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 100px;
+}
+
+.dark-to-white .shape-fill {
+  fill: #ffffff;
+}
+
+.white-to-dark .shape-fill {
+  fill: #212529;
+}
+
+.history-card {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.history-card-right {
+  text-align: right;
+}
+
+.year-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.year-text {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .history-card-right,
+  .history-card {
+    text-align: center;
+  }
+}
+
+
+/* Futuro */
+
+.quote-holder {
+  font-family: 'Libre Baskerville', serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  background-color: #d3d3d3;
+  padding: 3rem 3rem 1.5rem 3rem;
+  box-shadow: 0 10px 20px -10px #000000bb;
+  border-radius: 7px;
+}
+
+blockquote p::before,
+blockquote p::after {
+  content: "“";
+  font-size: 5rem;
+  position: absolute;
+  opacity: 0.4;
+}
+
+blockquote p::before {
+  margin: -2.5rem 0 0 -2rem;
+}
+
+blockquote p::after {
+  transform: rotate(180deg);
+  margin: -3.5rem 0 0 0rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote-holder {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .quote-holder img {
+    content: url('../img/ivan-sutherland_squared.jpeg');
+  }
+}
+
+
+/* Sobre */
+
+#sobre .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hyper-link {
+  font-weight: 500;
+  color: #212529;
+}
+
+.hyper-link:hover {
+  color: #8B8C8E;
+}
+
+.img-circular {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .ul-imagens {
+    columns: 2;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  color: #212529;
+  background-color: #d3d3d3;
+}
+
+.accordion-button {
+  padding: 0.7rem 1.2rem;
+  font-weight: 500;
+  border-style: none;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:hover {
+  background-color: #d3d3d3;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:active {
+  outline: none !important;
+  background-color: #d3d3d3;
+  box-shadow: none !important;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  margin: 0px;
+  line-height: 1.6;
+}
+
+a {
+  font-weight: 700;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.easteregg {
+  display: none;
+}
+
+footer:hover .normal {
+  display: none;
+}
+
+footer:hover .easteregg {
+  display: block;
+}
